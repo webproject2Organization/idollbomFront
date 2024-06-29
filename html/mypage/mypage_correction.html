@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDollbom_마이페이지</title>
+    <link rel="stylesheet" href="../../css/mypage/mypage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inincontainer">
+            <div class="mypage-main">마이페이지 > 아이정보 추가</div>
+            <div class="incontainer">
+                <div class="menu-bar">
+                    <div class="menu-bar-option">
+                        <a href="#">아이정보 추가</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <p>내정보 수정</p>
+                    </div>
+                    <hr class="custom-hr">
+                    <div class="menu-bar-option">
+                        <a href="#">수업찜 목록</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <a href="#">신고 목록</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <a href="#">내가 게시글</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <a href="#">내 문의</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <a href="#">내 리뷰</a>
+                    </div>
+                    <hr class="custom-hr">
+                    <div class="menu-bar-option">
+                        <a href="#">결제 내역</a>
+                    </div>
+                    <div class="menu-bar-option">
+                        <a href="#">포인트</a>
+                    </div>
+                    <div class="myprofile">
+                        <div class="profileimage">
+                            <img src="<%= result.imageUrl %>" alt="profileImage" class="img">
+                        </div>
+                        <div class="Nickname">
+                            닉네임
+                        </div>
+                  
+                        <div class="buttonbox">
+                            <a href="#">
+                                <button class="btn-block" type="button">로그아웃</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainbox">
+                    <form class="reset-form">
+                        <div class="reset">
+                           <div> 이름</div>
+                           <input type="textarea">
+                        </div>
+                        <div class="reset">
+                            <div>휴대폰번호</div>
+                            <input type="textarea">
+                        </div>
+
+                        <div class="reset">
+                            <div> 별명</div>
+                            <input type="textarea">
+                        </div>
+                        <div class="reset">
+                            <div> 프로필 변경</div>
+                            <input type="textarea">
+                        </div>
+                        <div class="reset">
+                            <div>주소지 관리</div>
+                            <input type="textarea">
+                        </div>
+                        <div class="submit">
+                            <a href="#">
+                                <button class="submit-button" type="button">제출</button>
+                            </a>
+                        </div>
+                    </form>
+            </div>
+            </div>
+        </div>
+
+
+
+        <!-- 팝업 배경 -->
+        <div class="popup-bg" id="popup-bg" onclick="closePopup()"></div>
+
+        <!-- 팝업 내용 -->
+        <div class="popup" id="popup">
+            <h2>프로필 편집</h2>
+            <form class="form-signin" action="/auth/<%= userId %>/update" method="POST" enctype="multipart/form-data">
+                <div class="profileimage2">
+                    <img src="<%= result.imageUrl %>" alt="profileImage" class="img">
+                </div>
+                <div class="input-container">
+                    <label for="inputChangeNickName" class="sr-only">닉네임 변경</label>
+                    <input type="text" name="nickname" id="inputChangeNickName" class="form-control" placeholder="변경할 닉네임" autofocus required>
+                </div>
+                <div class="input-container-three">
+                    <label for="inputDetailAddress" class="sr-only">주소 변경</label>
+                    <input type="text" name="city" id="inputAddress1" class="form-control2" placeholder="시도" autofocus>
+                    <input type="text" name="district" id="inputAddress2" class="form-control2" placeholder="시군구" autofocus>
+                    <input type="text" name="town" id="inputAddress3" class="form-control2" placeholder="읍면동" autofocus>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="detail" id="inputDetailAddress" class="form-control" placeholder="상세주소" autofocus required>
+                </div>
+                <div class="input-container">
+                    <label for="profileImage" class="sr-only">프로필 이미지 변경</label>
+                    <input type="file" name="profileImage" id="profileImage" class="form-control">
+                </div>
+                <button type="button" onclick="closePopup()" id="popupButton">취소</button>
+                <button type="submit" id="popupButton">저장</button>
+            </form>
+        </div>
+    </div>
+
+        <script>
+            function showPopup() {
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('popup-bg').style.display = 'block';
+            }
+
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+                document.getElementById('popup-bg').style.display = 'none';
+            }
+        </script>
+</body>
+
+</html>
