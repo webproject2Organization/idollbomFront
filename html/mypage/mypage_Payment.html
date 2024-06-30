@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iDollbom_마이페이지</title>
-    <link rel="stylesheet" href="../../css/mypage/mypage.css">
+    <link rel="stylesheet" href="../../css/mypage/mypage_payment.css">
 </head>
 
 <body>
     <div class="container">
         <div class="inincontainer">
-            <div class="mypage-main">마이페이지 > 내정보 수정</div>
+            <div class="mypage-main">마이페이지 > 결제 내역</div>
             <div class="incontainer">
                 <div class="menu-bar">
                     <div class="menu-bar-option">
                         <a href="../../html/mypage/mypage_myKids.html">아이정보 추가</a>
                     </div>
                     <div class="menu-bar-option">
-                        <p>내정보 수정</p>
+                        <a href="../../html/mypage/mypage_correction.html">내정보 수정</a>
                     </div>
                     <hr class="custom-hr">
                     <div class="menu-bar-option">
-                        <a href="../../html/mypage/mypage_hateUser.html">신고 목록</.>
+                        <a href="../../html/mypage/mypage_hateUser.html">신고 목록</a>
                     </div>
                     <div class="menu-bar-option">
                         <a href="../../html/mypage/mypage_myFavoriteClass.html">수업찜 목록</a>
@@ -38,7 +38,7 @@
                     </div>
                     <hr class="custom-hr">
                     <div class="menu-bar-option">
-                        <a href="../../html/mypage/mypage_Payment.html">결제 내역</a>
+                        <p>결제 내역</p>
                     </div>
                     <div class="menu-bar-option">
                         <a href="#">포인트</a>
@@ -59,34 +59,57 @@
                     </div>
                 </div>
                 <div class="mainbox">
-                    <form class="reset-form">
-                        <div class="reset">
-                           <div> 이름</div>
-                           <input type="textarea">
-                        </div>
-                        <div class="reset">
-                            <div>휴대폰번호</div>
-                            <input type="textarea">
-                        </div>
-
-                        <div class="reset">
-                            <div> 별명</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="reset">
-                            <div> 프로필 변경</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="reset">
-                            <div>주소지 관리</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="submit">
-                            <a href="#">
-                                <button class="submit-button" type="button">제출</button>
-                            </a>
-                        </div>
-                    </form>
+                    <div class="payment_container ">
+                        <h1>결제 내역 리스트</h1>
+                        <table class="payment-table">
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>수업 제목</th>
+                                    <th>예약 날짜</th>
+                                    <th>결제 금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>영어 놀이</td>
+                                    <td>2024 / 05 / 29</td>
+                                    <td>23000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
             </div>
             </div>
         </div>
