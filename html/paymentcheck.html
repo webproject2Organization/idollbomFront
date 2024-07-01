@@ -68,57 +68,64 @@
         </div>
 
         <!-- 나중에 value값들은 다 바꿔주기 -->
-        <div class="container">
-            <div class="class-container">
-                <div class="class-image-section">
-                    <label class="image-label">수업이미지</label>
-                    <img class="image" src="../images/kids1.jpg" alt="수업이미지">
-                </div>
-                <div class="class-details">
-                    <div class="detail-item">
-                        <label for="classname">수업제목</label>
-                        <input type="text" class="form-control" id="classname" value="동화책 읽기" readonly>
+         <!-- method 뭔지도 나중에 적기 -->
+        <form action="#">
+            <div class="container">
+                <!-- 수업 이미지 띄어주는 div -->
+                <div class="class-container">
+                    <div class="class-image-section">
+                        <label class="image-label">수업이미지</label>
+                        <img class="image" src="../images/kids1.jpg" alt="수업이미지">
                     </div>
-                    
-                    <div class="detail-item">
-                        <label for="classdate">수업 날짜</label>
-                        <input type="text" class="form-control" id="classdate" value="2023-12-15" readonly>    
-                    </div>
-                    
-                    <div class="detail-item">
-                        <label for="classtime">수업 시간</label>
-                        <input type="text" class="form-control" id="classtime" value="오후 2시" readonly>    
-                    </div>
-                    
-                    <div class="detail-item">
-                        <label for="money">결제 금액</label>
-                        <input type="text" class="form-control" id="money" value="₩50,000" readonly>
-                    </div>              
-                </div>
-            </div>
-        
-            <div class="class-container">
-                <div class="child-select">
-                    <h3 class="child-select-label">아이 선택</h3>
-                    <p class="child-select-description">수업을 들을 아이를 선택해주세요.</p>
-                </div>
-        
-                <div class="child-select">
-                    <label for="childlists" class="form-label">아이 선택</label>
-                    <select name="childlists" id="childlists" class="selectBox">
-                        <option value="none">===아이 선택===</option>
-                        <option value="#">김자란</option>
-                        <option value="#">김돌봄</option>
-                    </select>
-                </div>
-            </div>
-        
-            <div class="button-container">
-                <button class="btn btn-back">뒤로가기</button>
-                <button class="btn" type="submit">결제하기</button>
-            </div>
-        </div>
 
+                    <!-- 실제 선택한 수업 가져오는 div -->
+                    <div class="class-details">
+                        <div class="detail-item">
+                            <label for="classname">수업제목</label>
+                            <input type="text" class="form-control" id="classname" value="동화책 읽기" readonly>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label for="classdate">수업 날짜</label>
+                            <input type="text" class="form-control" id="classdate" value="2023-12-15" readonly>    
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label for="classtime">수업 시간</label>
+                            <input type="text" class="form-control" id="classtime" value="오후 2시" readonly>    
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label for="money">결제 금액</label>
+                            <input type="text" class="form-control" id="money" value="₩50,000" readonly>
+                        </div>              
+                    </div>
+                </div>
+            
+                <!-- 아이 선택하는 div -->
+                <div class="class-container">
+                    <div class="child-select">
+                        <h3 class="child-select-label">아이 선택</h3>
+                        <p class="child-select-description">수업을 들을 아이를 선택해주세요.</p>
+                    </div>
+            
+                    <div class="child-select">
+                        <label for="childlists" class="form-label">아이 선택</label>
+                        <select name="childlists" id="childlists" class="selectBox">
+                            <option value="none">===아이 선택===</option>
+                            <option value="#">김자란</option>
+                            <option value="#">김돌봄</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 버튼 부분 -->
+                <div class="button-container">
+                    <button class="btn btn-back">뒤로가기</button>
+                    <button class="btn" type="submit">결제하기</button>
+                </div>
+            </form>
+        </div>
 
     <footer id="footer">
         <div class="footer_wrap">
