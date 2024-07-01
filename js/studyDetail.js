@@ -1,8 +1,7 @@
+// 이미지 슬라이드 관련 변수 및 이벤트
 const sliderBox = document.querySelector(".slider-box");
 const sliderItems = document.querySelectorAll(".slider-item");
 const btns = document.querySelectorAll(".slider-btn");
-
-console.log(sliderItems.length);
 
 // transition 동작이 끝나고 난 뒤, 실행되는 메서드
 // 트랜지션 효과가 끝날때마다 실행되므로 두 번 실행됨. -> 트랜지션 효과 제거해서 1번만 실행하도록 한다.
@@ -28,6 +27,7 @@ sliderBox.ontransitionend = ()=>{
 
 }
 
+// 이미지 슬라이드 관련됨.
 btns.forEach(btn=>{
   btn.addEventListener("click", ()=>{
 
@@ -45,3 +45,24 @@ btns.forEach(btn=>{
     }
   });
 })
+
+// ===========================================================
+// 더 보기 버튼 및 내용에 관련된 js.
+
+const hiddenContent = document.querySelector(".hidden-content");
+const moreBtn = document.querySelector(".study-more-btn");
+
+moreBtn.addEventListener('click', ()=>{
+
+  // open 클래스 여부에 따라 다른 화살표가 나타나도록 css 설정
+  moreBtn.classList.toggle("open");
+  // hidden 클래스 여부에 따라 height를 다르게 설정 
+  hiddenContent.classList.toggle("hidden");
+
+  // 버튼의 내용을 클릭할 때마다 변경
+  if(moreBtn.children[0].textContent === '수업 더 보기'){
+    moreBtn.children[0].textContent = "접기";
+  }else{
+    moreBtn.children[0].textContent = "수업 더 보기";
+  }
+});

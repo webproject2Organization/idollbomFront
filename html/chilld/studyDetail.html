@@ -67,6 +67,7 @@
   <div id="main-wrapper">
     <!-- 왼쪽 수업 상세정보 영역 -->
     <div class="detail-left-area">
+      <div id="top">이동버튼 도착지</div>
       <!-- 이미지 슬라이드 -->
       <div class="carousel-container">
         <ul class="slider-box">
@@ -74,7 +75,7 @@
             <img src="../../images/index_pro_find.jpg" alt="slider-img4" />
           </li>
           <li class="slider-item">
-            <img src="../../images/care.jpeg" alt="slider-img1" />
+            <img src="../../images/a4c03f0c5f8fc.png" alt="slider-img1" />
           </li>
           <li class="slider-item">
             <img src="../../images/ff581d78778b7.png" alt="slider-img2" />
@@ -113,11 +114,14 @@
         <div class="content-img-wrap">
           <img src="../../images/LeeGuene/content-img2.jpg" alt="content-img1" />
         </div>
+        
         <!-- 내용 -->
         <p class="study-content">
           경제적인 부분까지 해결해준다!! <br/>
           합리적인 비용으로 긴 시간을 수업을 들으실 수 있고, 기존 수업비 대비 30% 할인된 가격 제공!!
-        </p>  <!-- 이미지 -->
+        </p>  
+        
+        <!-- 이미지 -->
         <div class="content-img-wrap">
           <img src="../../images/LeeGuene/content-img3.jpg" alt="content-img1" />
         </div>
@@ -126,10 +130,37 @@
           돌봄과 배움을 한 번에!!<br/>
           놀이부터 숙제, 공부까지 아이에게 정말로 도움이 되는 시간들!!
         </p>
+        
+        <!-- 버튼 클릭 전까지는 숨김 -->
+        <div class="hidden-content">
+          <!-- 이미지 -->
+          <div class="content-img-wrap">
+            <img src="../../images/LeeGuene/content-img3.jpg" alt="content-img1" />
+          </div>
+          <!-- 내용 -->
+          <p class="study-content">
+            돌봄과 배움을 한 번에!!<br/>
+            놀이부터 숙제, 공부까지 아이에게 정말로 도움이 되는 시간들!!
+          </p>
+  
+          <!-- 이미지 -->
+          <div class="content-img-wrap">
+            <img src="../../images/LeeGuene/content-img3.jpg" alt="content-img1" />
+          </div>
+          <!-- 내용 -->
+          <p class="study-content">
+            돌봄과 배움을 한 번에!!<br/>
+            놀이부터 숙제, 공부까지 아이에게 정말로 도움이 되는 시간들!!
+          </p>
+
+        </div>
+
         <button class="study-more-btn">
-          더 보기
-          <i class="fa-solid fa-angle-down"></i>
+          <span>수업 더 보기</span>
+          <i class="fa-solid fa-angle-down open-btn"></i>
+          <i class="fa-solid fa-angle-up close-btn"></i>
         </button>
+
       </section>
     </div>
   
@@ -171,6 +202,9 @@
       
     </div>
   </div>
+
+  <!-- top 이동 버튼 -->
+  <a class="move-to-top" href="#top"><i class="fa-solid fa-angles-up"></i></a>
 
   <!-- 푸터 -->
   <footer id="footer">
