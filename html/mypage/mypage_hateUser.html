@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iDollbom_마이페이지</title>
-    <link rel="stylesheet" href="../../css/mypage/mypage.css">
+    <link rel="stylesheet" href="../../css/mypage/mypage_Declaration.css">
 </head>
 
 <body>
     <div class="container">
         <div class="inincontainer">
-            <div class="mypage-main">마이페이지 > 내정보 수정</div>
+            <div class="mypage-main">마이페이지 > 신고 목록</div>
             <div class="incontainer">
                 <div class="menu-bar">
                     <div class="menu-bar-option">
                         <a href="../../html/mypage/mypage_myKids.html">아이정보 추가</a>
                     </div>
                     <div class="menu-bar-option">
-                        <p>내정보 수정</p>
+                        <a href="../../html/mypage/mypage_correction.html">내정보 수정</a>
                     </div>
                     <hr class="custom-hr">
                     <div class="menu-bar-option">
-                        <a href="../../html/mypage/mypage_hateUser.html">신고 목록</.>
+                        <p>신고 목록</p>
                     </div>
                     <div class="menu-bar-option">
                         <a href="../../html/mypage/mypage_myFavoriteClass.html">수업찜 목록</a>
@@ -59,34 +59,20 @@
                     </div>
                 </div>
                 <div class="mainbox">
-                    <form class="reset-form">
-                        <div class="reset">
-                           <div> 이름</div>
-                           <input type="textarea">
+                    <a href="/write/getWritedPage?postId=<%= post.postId %>">
+                        <div class="mypost">
+                            <div>
+                                게시글제목
+                            </div>
+                            <p>신고내용</p>
+                            <button>취소</button>
+         
                         </div>
-                        <div class="reset">
-                            <div>휴대폰번호</div>
-                            <input type="textarea">
-                        </div>
+                        
+                            <p>저장한 게시글이 아직 없습니다.</p>
+                        
+                    </a>
 
-                        <div class="reset">
-                            <div> 별명</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="reset">
-                            <div> 프로필 변경</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="reset">
-                            <div>주소지 관리</div>
-                            <input type="textarea">
-                        </div>
-                        <div class="submit">
-                            <a href="#">
-                                <button class="submit-button" type="button">제출</button>
-                            </a>
-                        </div>
-                    </form>
             </div>
             </div>
         </div>
