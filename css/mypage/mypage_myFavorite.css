@@ -256,3 +256,10 @@ hr.custom-hr{
     background-color: #0056b3; /* 호버 시 배경색 변경 */
     transform: translateY(-2px); /* 호버 시 살짝 위로 이동 */
 }
+
+
+.favorite{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
