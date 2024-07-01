@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96adc9c597.js" crossorigin="anonymous"></script>
+    <title>프로필 등록</title>
+    <link rel="stylesheet" href="../../css/modal/profile-modify.css" />
+    <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
+
+</head>
+<body>
+    <form action="#" method="get">
+        <div class="modal">
+            <div class="modal-body">
+                <div class="header">
+                    <a href="#"><img class="img" src="../../images/logo.png" alt="로고"></a>
+                    <h3 id="title">프로필 사진 추가</h3>
+                    <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                </div>
+                <!-- 이미지 추가창 -->
+                <div class="profile-img-wrap">
+                    <div class="img-box"></div>
+                    <!-- <a href="#" class="fa-regular fa-square-plus"></a> -->
+                     <!-- 보류 추가 작업 필요 -->
+                     <input type="file">
+
+                </div>
+
+                <div class="modal-btn">
+                    <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                    <button class="close-btn btn">취소하기</button>
+                    <button class="add-btn btn" type="submit">등록하기</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <button class="btn-open-modal">프로필 등록</button>
+    <script src="../../js/modal.js"></script>
+</body>
+</html>
