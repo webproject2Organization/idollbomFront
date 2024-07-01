@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<link rel="stylesheet" href="/css/kologinpage.css">
-=======
 <link rel="stylesheet" href="../../css/login/kologinpage.css">
->>>>>>> e7a495ce58191fb11693d485e9ce7f02dae86bba
 <script src="../js/loginpage.js"></script>
 <title>Login Page</title>
 </head>
 <body>
 <div class="login-container">
   <h3>L O G I N</h3>
+  <!-- 로그인폼 -->
   <form id="loginForm">
     <div class="formCss">
       <input type="email" id="email" placeholder="Email">
@@ -45,12 +42,11 @@
           </a>
         </div>
       </div>
-      
-      <div class="underline" onclick="window.location='../html/resetpassword.html';">비밀번호를 잊으셨다면?</div>
     </div>
+    <!-- 로그인/sign up 으로 이동 -->
     <div class="formCss buttonCss">
       <input type="submit" value="LOGIN">
-      <input type="button" value="SIGN UP" onclick="window.location='../html/registerpage.html';">
+      <input type="button" value="SIGN UP" onclick="window.location='../../html/login/registerpage.html';">
     </div>
   </form>
 </div>
