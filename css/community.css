@@ -26,9 +26,10 @@ h2{font-size: 35px; text-align: center; margin: 100px 0 50px 0;}
 
 /* 검색 */
 .community_search{display: flex; margin-bottom: 30px; justify-content: space-between;}
-.community_search>p button{display: block; width: 150px; height: 50px; line-height: 50px; background: #048D3B; color: #fff;}
+.community_search>p{font-size: 25px; color: #626262;}
+.community_search>p span{font-size: 25px; font-family: 'GmarketSansBold'; color: #E41F26;}
 
-.community_search>div{display: flex; padding-top: 15px;}
+.community_search>div{display: flex;}
 .community_search select{width: 100px; height: 35PX; text-align: left; padding-left: 5px; border: 0; border-bottom: 2px solid #000000; color: #626262; font-size: 20PX; font-family: 'GmarketSansBold'; outline: none;}
 .community_search>div form{width: 430px; height: 35px; border-bottom: 2px solid; margin-left: 30px;}
 .community_search>div form input:nth-child(1){width: 90%; border: 0; outline: none;}

@@ -203,6 +203,63 @@
 .year-select{}
 /* =========================================================== */
 
+/* 수업 이미지 등록에 관한 css */
+.class-img-wrap > h1{
+  margin: 30px 0;
+  padding-bottom: 20px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+.add-img-wrap{
+  display: flex;
+  column-gap: 25px;
+}
+
+.add-img-wrap > .upload-name{
+  padding: 10px;
+  border: 1px solid #aaa;
+  width: 50%;
+  align-self: flex-start;
+  outline: none;
+  transition: 0.15s;
+}
+
+.add-img-wrap > .upload-name:hover{
+  border: 2px solid #00B455;
+}
+
+.add-img-wrap > label{
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+
+  text-align: center;
+  color: #fff;
+  background-color: #999;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.add-img-wrap > label:hover {
+  background-color: #888;
+}
+
+/* 이미지 등록 아이콘 css */
+.add-img-wrap > label > i::before{
+  font-size: 30px;
+  line-height: 100px;
+}
+
+/* 기존 첨부파일 css 제거 */
+.add-img-wrap > input[type="file"] {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+
 /* 썸머노트 css */
 .summer-note{
   z-index: -1;
