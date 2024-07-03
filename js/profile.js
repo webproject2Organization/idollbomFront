@@ -1,5 +1,5 @@
-const modal = document.querySelector('.modal');
-const btnOpenModal=document.querySelector('.btn-open-modal');
+const modal = document.querySelector('.profile');
+const btnOpenModal=document.querySelector('.btn-profile-modal');
 const btnCloseModal=document.querySelector('.close-btn');
 const btnCloseModal2=document.querySelector('#close-btn');
 

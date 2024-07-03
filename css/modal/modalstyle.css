@@ -26,6 +26,22 @@ form{
     background-color: rgba(0,0,0,0.4);
 }
 
+
+.profile{
+    /* 버튼을 누르기 전엔 display none, 버튼을 눌렀다면 block로 변경 */
+    position:absolute;
+    display:none;
+    
+    justify-content: center;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
 .modal-body{
     position:absolute;
     box-sizing: border-box;
