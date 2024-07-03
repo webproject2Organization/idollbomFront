@@ -38,3 +38,14 @@
     width: 80px;
     position: relative;
 }
+
+/* 각 모달창 크기 */
+.profile-body{
+    width: 500px;
+    height: 650px;
+}
+
+/* 모달 위치 한번 더 잡아줌 */
+.modal-body{
+    margin-top: -325px;
+}

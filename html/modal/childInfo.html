@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이 정보 등록</title>
     <!-- 공통으로 들어가는 css는 한번에 묶어둠 -->
-    <link rel="stylesheet" href="../../css/modal/modalstyle.css">
+    <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
     <link rel="stylesheet" href="../../css/modal/childInfo.css">
 </head>
 <body>
     <form action="#" method="get">
         <div class="modal">
-            <div class="modal-body">
+            <div class="modal-body profile-body">
                 <div class="header">
                     <img class="img" src="../../images/logo.png" alt="로고">
                     <h3 id="title">아이 정보 추가</h3>
@@ -20,10 +20,11 @@
                 <div class="input-wrap">
                     <label for="name" class="form">이름</label>
                     <input id="name" type="text" class="form-control" placeholder="김돌봄">
-                </div>
+                </div>            
+                <!-- 오늘 날짜 이후에 대한 거 막아줘도 좋을듯 -->
                 <div class="input-wrap">
                     <label for="birthday" class="form">생년월일</label>
-                    <input id="birthday" type="date" class="form-control"> 
+                    <input type="date" class="form-control"> 
                 </div>
                 <div class="input-wrap">
                     <label for="gender" class="form">성별</label>
@@ -32,9 +33,10 @@
                     <input type="radio" id="female" name="gender" value="여자" class="radio">
                     <label for="female">여자 아이</label>
                 </div>
+                <!-- 글자 수 제한 하는 거 보여줘도 좋을듯 -->
                 <div class="input-wrap introduce">
                     <label for="intro" class="form">아이 소개</label>
-                    <textarea id="textarea" class="form-control" placeholder="아이에 대해 소개해주세요." rows="6" aria-required="true"></textarea>
+                    <textarea id="textarea" class="form-control" placeholder="아이에 대해 소개해주세요." rows="6" maxlength="500"></textarea>
                 </div>
                 <div class="modal-btn">
                     <button class="close-btn btn">취소하기</button>
