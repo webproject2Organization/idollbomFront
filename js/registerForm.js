@@ -77,4 +77,12 @@ hours.forEach((hour) =>{
   })
 });
 
+// 첨부파일 관련 js
+const fileBtn = document.querySelector(".add-img-wrap > #add-img");
+const uploadName = document.querySelector(".add-img-wrap > .upload-name");
 
+fileBtn.addEventListener("change", ()=>{
+  let fileName = fileBtn.value; // 선택된 첨부파일 경로
+  uploadName.value = fileName; // 추가된 파일 경로 출력
+  uploadName.style.border = '2px solid #00B455'; // 테투리 css
+});
