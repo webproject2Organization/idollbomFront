@@ -27,11 +27,6 @@
     transform: translate(-50%, -50%);
 }
 
-.profile-body{
-    width: 500px;
-    height: 350px;
-}
-
 /* 이미지 미리보기 css */
 .img-profile{
     border-radius: 50%; 
@@ -47,4 +42,14 @@
     color: white;
     cursor: pointer;
     align-items: end;
+}
+
+.profile-body{
+    width: 500px;
+    height: 350px;
+}
+
+/* 모달 위치 한번 더 잡아줌 */
+.modal-body{
+    margin-top: -175px;
 }
