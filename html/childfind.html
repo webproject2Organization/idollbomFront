@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/childfind.css">
     <link rel="stylesheet" href="../css/header_pro.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
+    <link rel="stylesheet" href="../../css/modal/letter.css" />
     <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
     <script src="../../js/motion.js"></script>
 </head>
@@ -69,7 +71,7 @@
                     <td>3세</td>
                     <td>여</td>
                     <td>주의 산만</td>
-                    <td><button><img src="../images/mail.jpeg" alt="쪽지"></button></td>
+                    <td><button class="btn-open-modal"><img src="../images/Alarm.png" alt="쪽지"></button></td>
                 </tr>
                 <tr>
                     <td>놀이터</td>
@@ -141,7 +143,7 @@
                     <td>3세</td>
                     <td>여</td>
                     <td>주의 산만</td>
-                    <td><button><img src="../images/mail.jpeg" alt="쪽지"></button></td>
+                    <td><button class="btn-open-modal"><img src="../images/mail.jpeg" alt="쪽지"></button></td>
                 </tr>
             </tbody>
         </table>
@@ -155,6 +157,32 @@
             <!-- &raquo는 다음페이지로 이동 -->
             <a href="#">&raquo;</a>
         </div>
+        <!-- 쪽지보내기 모달창 -->
+        <form action="#" method="get">
+            <div class="modal">
+                <div class="modal-body profile-body">
+                    <div class="header">
+                        <img class="img" src="../../images/logo.png" alt="로고">
+                        <h3 id="title">쪽지 보내기</h3>
+                        <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="parent" class="form-label">부모님</label>
+                        <input type="parent" class="form-control" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="textarea" class="form-label">내용</label>
+                        <textarea id="textarea" class="form-control" placeholder="수업 후기를 작성해주세요." rows="6" maxlength="500"></textarea>
+                    </div>
+    
+                    <div class="modal-btn">
+                        <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                        <button class="close-btn btn">취소하기</button>
+                        <button class="add-btn btn" type="submit">보내기</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- footer -->
@@ -191,4 +219,5 @@
         </div>
     </footer>
 </body>
+<script src="../../js/modal.js"></script>
 </html>

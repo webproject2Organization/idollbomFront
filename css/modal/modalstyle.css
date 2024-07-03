@@ -6,16 +6,28 @@
     font-weight: normal;
     font-style: normal;}
 
-body{
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
 form{
     width: 30vw;
     margin: 0 auto;
 }
 
 .modal{
+    /* 버튼을 누르기 전엔 display none, 버튼을 눌렀다면 block로 변경 */
+    position:absolute;
+    display:none;
+    
+    justify-content: center;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.profile{
     /* 버튼을 누르기 전엔 display none, 버튼을 눌렀다면 block로 변경 */
     position:absolute;
     display:none;

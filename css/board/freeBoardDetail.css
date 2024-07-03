@@ -81,7 +81,7 @@ button {
 /* 게시글 상세보기 폼 css */
 /* 공통 css */
 .board-form{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -97,7 +97,7 @@ button {
 }
 
 .board-form > div > input{
-  width: 100%;
+  width: 80%;
   height: 40px;
   outline: none;
   border: none;
@@ -117,7 +117,7 @@ button {
 /* 게시글 내용 css */
 .post-content-wrap > textarea{
   resize: none;
-  width: 100%;
+  width: 80%;
   height: 300px;
   border: none;
   outline: none;

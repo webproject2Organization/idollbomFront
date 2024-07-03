@@ -20,10 +20,6 @@
   margin: 0 auto;
 }
 
-.board-form > div{
-  width: 80%;
-}
-
 /* 폼 내 모든 label css */
 .board-form > div label{
   display: inline-block;
@@ -34,7 +30,7 @@
 .board-form > div > input,
 .board-form > div > textarea{
   display: inline-block;
-  width: 90%;
+  width: 80%;
   outline: none;
   font-size: 20px;
 }
@@ -55,12 +51,8 @@
 
 /* 목록보기 button css */
 .list-btn-wrap{
+  width: 90%;
   text-align: right;
-}
-
-.list-btn-wrap > a{
-  display: block;
-  margin-right: -120px;
 }
 
 .list-btn-wrap button{
@@ -79,7 +71,7 @@
 .post-title-wrap > #title-input{
   border: none;
   border-bottom: 2px solid #ccc;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 .post-title-wrap > #title-input:hover{
@@ -152,8 +144,6 @@
 }
 
 .post-submitBtn-wrap button{
-  width: 90%;
-  margin: 0 auto;
   display: block;
   font-weight: bold;
   font-size: 20px;
