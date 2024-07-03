@@ -61,10 +61,10 @@ h2{font-size: 35px; text-align: center; margin: 100px 0 50px 0;}
 .class_list table td:nth-of-type(2) div:nth-of-type(1) img{height: 20px; margin: 0 10px 0 15px;}
 .class_list table td:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(1){font-size: 20px; margin-bottom: 10px;}
 .class_list table td:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(2){font-size: 14px; color: rgba(0, 0, 0, 0.7); margin-top: 3px;}
-.class_list table td:nth-of-type(2)>p:nth-of-type(2){font-size: 25px; margin-bottom: 10px;}
-.class_list table td:nth-of-type(2)>p:nth-of-type(3){color: rgba(0, 0, 0, 0.7); margin-bottom: 20px;}
-.class_list table td:nth-of-type(2)>p:nth-of-type(4){color: rgba(0, 0, 0, 0.7); margin-bottom: 10px;}
-.class_list table td:nth-of-type(2)>p:nth-of-type(5){color: #048D3B;}
+.class_list table td:nth-of-type(2)>p:nth-of-type(1){font-size: 25px; margin-bottom: 10px;}
+.class_list table td:nth-of-type(2)>p:nth-of-type(2){color: rgba(0, 0, 0, 0.7); margin-bottom: 20px;}
+.class_list table td:nth-of-type(2)>p:nth-of-type(3){color: rgba(0, 0, 0, 0.7); margin-bottom: 10px;}
+.class_list table td:nth-of-type(2)>p:nth-of-type(4){color: #048D3B;}
 .class_list table td:nth-of-type(3) img{margin:0 0 30px 170px;}
 .class_list table td:nth-of-type(3) a{display: block; width: 200px; height: 70px; line-height: 70px; background-color: #00568B; color: #fff;}
 
