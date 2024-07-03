@@ -19,22 +19,31 @@ form{
     /* 버튼을 누르기 전엔 display none, 버튼을 눌렀다면 block로 변경 */
     position:absolute;
     display:none;
-    width: 50%;
+    
+    justify-content: center;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-body{
+    position:absolute;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    height: 70%;
     row-gap: 30px;
     padding: 30px;
 
+    top: 50%;
     text-align: center;
-    background-color: rgb(255,255,255);
-    border-radius:10px;
+
+    background-color: rgb(255,255,255); 
+    border-radius:10px; 
     box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
 }
 
@@ -87,7 +96,7 @@ form{
 }
 
 .add-btn{
-    background-color: #00568b;
+    background-color: #02bc20;
 }
 
 #title{
@@ -123,7 +132,7 @@ form{
 }
 
 .close-btn{
-    background-color:  rgba(242, 63, 63, 0.809);
+    background-color:  #f93270;
 }
 
 /* 모든 버튼에 커서 표시 */

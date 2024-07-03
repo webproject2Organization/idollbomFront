@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>수업 후기</title>
-    <link rel="stylesheet" href="../../css/modal/review.css" />
-    <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+    <link rel="stylesheet" href="../css/modalstyle.css" />
 </head>
 <body>
     <form action="#" method="get">
         <div class="modal">
-            <div class="modal-body">
+            <div class="modal-body profile-body">
                 <div class="header">
-                    <img class="img" src="../../images/logo.png" alt="로고">
+                    <img class="img" src="../../logo.png" alt="로고">
                     <h3 id="title">수업 후기 작성</h3>
-                    <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                    <button id="close-btn"><img class="x-btn" src="../../closebtn.png" alt="닫기버튼"></button>
                 </div>
                 <div class="mb-3">
                     <label for="childName" class="form-label">수업명</label>
@@ -28,6 +28,7 @@
                     <label for="childInstruct" class="form-label">수업 후기</label>
                     <textarea id="textarea" class="form-control" placeholder="수업 후기를 작성해주세요." rows="6"></textarea>
                 </div>
+                <!-- 별점은 어려울 거 같으면 셀렉트 박스로 하기 -->
                 <div class="mb-3">
                     <label for="childInstruct" class="form-label">별점</label>
                     <div class="evaluation-wrap">
@@ -50,6 +51,6 @@
         </div>
     </form>
     <button class="btn-open-modal">수업 후기 작성</button>
-    <script src="../../js/modal.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

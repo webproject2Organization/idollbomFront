@@ -32,3 +32,13 @@ label{
 .reporttext{
     margin-bottom: 15px; /* 아래에 더 많은 여백 추가 */
 }
+
+.profile-body{
+    width: 500px;
+    height: 580px;
+}
+
+/* 모달 위치 한번 더 잡아줌 */
+.modal-body{
+    margin-top: -290px;
+}
