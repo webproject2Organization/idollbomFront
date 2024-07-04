@@ -24,13 +24,14 @@
 .board-form > div label{
   display: inline-block;
   width: 100px;
+  margin-left: 100px;
 }
 
 /* 폼 내 모든 input, textarea 공통 css */
 .board-form > div > input,
 .board-form > div > textarea{
   display: inline-block;
-  width: 80%;
+  width: 70%;
   outline: none;
   font-size: 20px;
 }
@@ -38,6 +39,8 @@
 /* 페이지 제목 css */
 .page-title-wrap{
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .page-title-wrap > h1{
@@ -51,19 +54,19 @@
 
 /* 목록보기 button css */
 .list-btn-wrap{
-  width: 90%;
+  width: 82%;
   text-align: right;
 }
 
-.list-btn-wrap button{
+.list-btn-wrap > a{
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #014772ab;
-  color: #fff;
   transition: 0.3s;
+  color: #fff;
 }
 
-.list-btn-wrap button:hover{
+.list-btn-wrap > a:hover{
   background-color: #014772;
 }
 
@@ -106,8 +109,9 @@
 
 /* 첨부파일 css */
 .attachment-wrap{
-  display: flex;
-  column-gap: 25px;
+  /* display: flex; */
+  text-align: right;
+  padding-right: 300px;
 }
 
 .attachment-wrap > .upload-name{
@@ -143,9 +147,11 @@
   text-align: center;
 }
 
-.post-submitBtn-wrap button{
+.post-submitBtn-wrap > a{
   display: block;
-  width: 90%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
   background-color: #02ca60;
   opacity: 0.7;
   color: #fff;
@@ -156,7 +162,11 @@
   font-size: 20px;
 }
 
-.post-submitBtn-wrap button:hover{
+.post-submitBtn-wrap > a:hover{
   opacity: 1;
   transform: scale(1.03);
+}
+
+.post-submitBtn-wrap button{
+  color: #fff;
 }

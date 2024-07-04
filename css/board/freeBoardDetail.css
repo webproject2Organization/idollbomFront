@@ -62,11 +62,15 @@ button {
 /* 목록 보기 button css */
 .list-btn-wrap{
   width: 90%;
-  text-align: right;
   margin-bottom: 50px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
 }
 
-.list-btn-wrap button{
+.list-btn-wrap > a{
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #014772ab;
@@ -74,9 +78,20 @@ button {
   transition: 0.3s;
 }
 
-.list-btn-wrap button:hover{
+.list-btn-wrap a:hover{
   background-color: #014772;
 }
+
+/* 신고하기 button css */
+.list-btn-wrap > .report-btn{
+  background-color: rgba(255, 0, 0, 0.678);
+  padding-top: 13px;
+}
+
+.list-btn-wrap > .report-btn:hover{
+  background-color: rgb(255, 0, 0);
+}
+
 
 /* 게시글 상세보기 폼 css */
 /* 공통 css */

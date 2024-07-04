@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iDollbom_마이페이지</title>
     <link rel="stylesheet" href="../../css/mypage/mypage.css">
-    <link rel="stylesheet"  href="../../css/header_parents.css">
+    <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
 
-    <link rel="stylesheet" href="../../css/modal/password-modify.css" />
-    <link rel="stylesheet" href="../../css/modal/profile-modify.css" />
+    <!-- 공통모달 css -->
     <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
-
-    <script src="../../js/modal.js"></script>
-    <!-- <script src="../../js/profile.js"></script> -->
+    <!-- 비밀번호 변경 css -->
+    <link rel="stylesheet" href="../../css/modal/password-modify.css" />
+    <!-- 프로필 변경 css -->
+    <link rel="stylesheet" href="../../css/modal/profile-modify.css" />
 </head>
 
 <body>
@@ -25,48 +25,49 @@
             <nav>
                 <ul class="gnb">
                     <li>
-                        <a href="sub1.html">부모님</a>
+                        <a href="../../html/main/index_parents.html">부모님</a>
                         <ul>
-                            <li><a href="sub1.html">매칭</a></li>
+                            <li><a href="../../html/matching.html">매칭</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub2.html">전문가</a>
+                        <a href="../../html/main/index_pro.html">전문가</a>
                     </li>
                     <li>
-                        <a href="sub3.html">신청하기</a>
+                        <a href="../../html/class_list.html">신청하기</a>
                         <ul>
-                            <li><a href="sub3.html">돌봄</a></li>
-                            <li><a href="sub3_2.html">교육</a></li>
-                            <li><a href="sub3.html">운동</a></li>
-                            <li><a href="sub3_2.html">예능</a></li>
+                            <li><a href="#">돌봄</a></li>
+                            <li><a href="#">교육</a></li>
+                            <li><a href="#">운동</a></li>
+                            <li><a href="#">예능</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub4.html">커뮤니티</a>
+                        <a href="../../html/community_parent.html">커뮤니티</a>
                         <ul>
-                            <li><a href="sub4.html">자유게시판</a></li>
+                            <li><a href="../../html/community_parent.html">자유게시판</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub5.html">고객센터</a>
+                        <a href="../../html/notice.html">고객센터</a>
                         <ul>
-                            <li><a href="sub5.html">문의하기</a></li>
-                            <li><a href="sub5_2.html">공지사항</a></li>
+                            <li><a href="../../html/question.html">문의하기</a></li>
+                            <li><a href="../../html/notice.html">공지사항</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="side">
-                <p><button><img src="../../images/Alarm.png" alt="알림"></button></p>
-                <p><a href="#">마이페이지</a></p>
-                <p><a href="#">로그인 /</a></p>
-                <p><a href="#">회원가입</a></p>
+                <p><button onclick="window.location='../mypage/mypage_mail.html'"><img src="../../images/Alarm.png"
+                            alt="알림"></button></p>
+                <p><a href="../../html/mypage/mypage_correction.html">마이페이지</a></p>
+                <p><a href="../../html/login/loginpage.html">로그인 /</a></p>
+                <p><a href="../../html/login/registerpage.html">회원가입</a></p>
             </div>
         </div>
     </header>
     <div class="container">
-           <!-- 사이드바 -->
+        <!-- 사이드바 -->
         <div class="inincontainer">
             <div class="mypage-main">마이페이지 > 내정보 수정</div>
             <div class="incontainer">
@@ -79,7 +80,7 @@
                     </div>
                     <hr class="custom-hr">
                     <div class="menu-bar-option">
-                        <a href="../../html/mypage/mypage_hateUser.html">신고 목록</.>
+                        <a href="../../html/mypage/mypage_hateUser.html">신고 목록</a>
                     </div>
                     <div class="menu-bar-option">
                         <a href="../../html/mypage/mypage_myFavoriteClass.html">수업찜 목록</a>
@@ -103,12 +104,12 @@
                     <!-- 프로필 -->
                     <div class="myprofile">
                         <div class="profileimage">
-                            <img src="../../images/ff581d78778b7.png" alt="profileImage" class="img">
+                            <img src="../../images/pro_salary.png" alt="profileImage" class="img">
                         </div>
                         <div class="Nickname">
                             닉네임
                         </div>
-                  
+
                         <div class="buttonbox">
                             <a href="#">
                                 <button class="btn-block" type="button">로그아웃</button>
@@ -120,8 +121,8 @@
                 <div class="mainbox">
                     <form class="reset-form">
                         <div class="reset">
-                           <div> 이름</div>
-                           <input type="textarea">
+                            <div> 이름</div>
+                            <input type="textarea">
                         </div>
                         <div class="reset">
                             <div>휴대폰번호</div>
@@ -140,89 +141,80 @@
                             <div>프로필</div>
                             <button class="profile btn-profile-modal">프로필 변경</button>
                         </div>
-                        
+
                         <div class="reset" id="pro-add">
                             <div>주소지</div>
                             <button class="address">주소지 변경</button>
                         </div>
                         <div class="submit">
+                            <!-- 내 정보를 수정하면 어느 페이지로 이동해야 되나?? -->
                             <a href="#">
                                 <button class="submit-button" type="button">제출</button>
                             </a>
                         </div>
                     </form>
+                </div>
             </div>
-            </div>
-        </div>
+            <!-- 비밀번호 변경 모달창 -->
+            <form action="#" method="get">
+                <div class="modal-pwd">
+                    <div class="pwd-body pwd-center-body">
+                        <div class="header">
+                            <img class="img" src="../../images/logo.png" alt="로고">
+                            <h3 id="title">비밀번호 변경</h3>
+                            <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="childName" class="form-label">현재 비밀번호</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="childName" class="form-label">비밀번호</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="childInstruct" class="form-label">비밀번호 확인</label>
+                            <input type="text" class="form-control" >
+                        </div>
+        
+                        <div class="modal-btn">
+                            <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                            <button class="close-btn btn">취소하기</button>
+                            <button class="regist-btn btn" type="submit">수정하기</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
-
-
-        <!-- 팝업 배경 -->
-        <div class="popup-bg" id="popup-bg" onclick="closePopup()"></div>
-
-        <!-- 팝업 내용 -->
-        <div class="popup" id="popup">
-            <h2>프로필 편집</h2>
-            <form class="form-signin" action="/auth/<%= userId %>/update" method="POST" enctype="multipart/form-data">
-                <div class="profileimage2">
-                    <img src="<%= result.imageUrl %>" alt="profileImage" class="img">
+            <!-- 프로필 변경 모달창 -->
+            <form action="#" method="get">
+                <div class="modal-profile">
+                    <div class="modal-body profile-body">
+                        <div class="header">
+                            <a href="#"><img class="img" src="../../images/logo.png" alt="로고"></a>
+                            <h3 id="title">프로필 등록</h3>
+                            <button id="close-profile-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                        </div>
+                        <!-- 이미지 미리보기 -->
+                        <div class="profile-img-wrap">
+                            <img id="preview" alt="미리보기" class="img-profile">
+                            <label class="input-file-button" for="input-file">upload</label>
+                            <input type="file" id="input-file" onchange="prevImage(this)" style="display: none;"/>
+                        </div>
+        
+                        <div class="modal-btn">
+                            <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                            <button class="close-profile-btn btn">취소하기</button>
+                            <button class="add-btn btn" type="submit">등록하기</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="inputChangeNickName" class="sr-only">닉네임 변경</label>
-                    <input type="text" name="nickname" id="inputChangeNickName" class="form-control" placeholder="변경할 닉네임" autofocus required>
-                </div>
-                <div class="input-container-three">
-                    <label for="inputDetailAddress" class="sr-only">주소 변경</label>
-                    <input type="text" name="city" id="inputAddress1" class="form-control2" placeholder="시도" autofocus>
-                    <input type="text" name="district" id="inputAddress2" class="form-control2" placeholder="시군구" autofocus>
-                    <input type="text" name="town" id="inputAddress3" class="form-control2" placeholder="읍면동" autofocus>
-                </div>
-                <div class="input-container">
-                    <input type="text" name="detail" id="inputDetailAddress" class="form-control" placeholder="상세주소" autofocus required>
-                </div>
-                <div class="input-container">
-                    <label for="profileImage" class="sr-only">프로필 이미지 변경</label>
-                    <input type="file" name="profileImage" id="profileImage" class="form-control">
-                </div>
-                <button type="button" onclick="closePopup()" id="popupButton">취소</button>
-                <button type="submit" id="popupButton">저장</button>
             </form>
         </div>
-        
-        <!-- 비밀번호 모달창 -->
-        <form action="#" method="get">
-            <div class="modal">
-                <div class="modal-body profile-body">
-                    <div class="header">
-                        <img class="img" src="../../images/logo.png" alt="로고">
-                        <h3 id="title">비밀번호 변경</h3>
-                        <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
-                    </div>
-                    <div class="mb-3">
-                        <label for="childName" class="form-label">현재 비밀번호</label>
-                        <input type="text" class="form-control" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="childName" class="form-label">비밀번호</label>
-                        <input type="text" class="form-control" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="childInstruct" class="form-label">비밀번호 확인</label>
-                        <input type="text" class="form-control" >
-                    </div>
-    
-                    <div class="modal-btn">
-                        <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
-                        <button class="close-btn btn">취소하기</button>
-                        <button class="regist-btn btn" type="submit">수정하기</button>
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
     <footer id="footer">
         <div class="footer_wrap">
-            <img src="../images/footer_logo.png" alt="IDOLL봄">
+            <img src="../../images/footer_logo.png" alt="IDOLL봄">
 
             <div>
                 <div>
@@ -245,38 +237,30 @@
                     <li><a href="#">이메일주소</a></li>
                 </ul>
                 <ul>
-                    <li><a href="https://blog.naver.com/jaranblog" target="_blank"><img src="../../images/footer_social_blog.png" alt="블로그 바로가기"></a></li>
-                    <li><a href="https://www.instagram.com/jaranda__official" target="_blank"><img src="../../images/footer_social_insta.png" alt="인스타그램 바로가기"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCTXkxn1OlVvljxEe-hbd3Vg" target="_blank"><img src="../../images/footer_social_youtube.png" alt="유튜브 바로가기"></a></li>
+                    <li><a href="https://blog.naver.com/jaranblog" target="_blank"><img
+                                src="../../images/footer_social_blog.png" alt="블로그 바로가기"></a></li>
+                    <li><a href="https://www.instagram.com/jaranda__official" target="_blank"><img
+                                src="../../images/footer_social_insta.png" alt="인스타그램 바로가기"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTXkxn1OlVvljxEe-hbd3Vg" target="_blank"><img
+                                src="../../images/footer_social_youtube.png" alt="유튜브 바로가기"></a></li>
                 </ul>
             </div>
         </div>
-        
+
     </footer>
-        <script>
-            function showPopup() {
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('popup-bg').style.display = 'block';
-            }
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popup-bg').style.display = 'block';
+        }
 
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none';
-                document.getElementById('popup-bg').style.display = 'none';
-            }
-
-            // 이미지를 미리 불러오는 js
-            function prevImage(input) {
-                    if (input.files && input.files[0]) {
-                            var reader = new FileReader();
-                            reader.onload = function(e) {
-                                document.getElementById('preview').src = e.target.result;
-                            };
-                        reader.readAsDataURL(input.files[0]);
-                    } else {
-                        document.getElementById('preview').src = "";
-                    }
-                }
-        </script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popup-bg').style.display = 'none';
+        }
+    </script>
+    <script src="../../js/password-modal.js"></script>
+    <script src="../../js/profile-modal.js"></script>
 </body>
 
 </html>

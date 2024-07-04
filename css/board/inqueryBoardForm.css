@@ -55,7 +55,7 @@
   text-align: right;
 }
 
-.list-btn-wrap button{
+.list-btn-wrap > a{
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #014772ab;
@@ -63,7 +63,7 @@
   transition: 0.3s;
 }
 
-.list-btn-wrap button:hover{
+.list-btn-wrap > a:hover{
   background-color: #014772;
 }
 

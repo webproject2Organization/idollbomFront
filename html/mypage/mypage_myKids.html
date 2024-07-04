@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="../../css/mypage/mypage_myKids.css">
-    <link rel="stylesheet"  href="../../css/header_parents.css">
+    <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <!-- 공통으로 들어가는 css는 한번에 묶어둠 -->
     <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
     <link rel="stylesheet" href="../../css/modal/childInfo.css">
 </head>
+
 <body>
     <header id="header">
         <div class="header_wrap">
@@ -20,43 +21,44 @@
             <nav>
                 <ul class="gnb">
                     <li>
-                        <a href="sub1.html">부모님</a>
+                        <a href="../../html/main/index_parents.html">부모님</a>
                         <ul>
-                            <li><a href="sub1.html">매칭</a></li>
+                            <li><a href="../../html/matching.html">매칭</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub2.html">전문가</a>
+                        <a href="../../html/main/index_pro.html">전문가</a>
                     </li>
                     <li>
-                        <a href="sub3.html">신청하기</a>
+                        <a href="../../html/class_list.html">신청하기</a>
                         <ul>
-                            <li><a href="sub3.html">돌봄</a></li>
-                            <li><a href="sub3_2.html">교육</a></li>
-                            <li><a href="sub3.html">운동</a></li>
-                            <li><a href="sub3_2.html">예능</a></li>
+                            <li><a href="#">돌봄</a></li>
+                            <li><a href="#">교육</a></li>
+                            <li><a href="#">운동</a></li>
+                            <li><a href="#">예능</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub4.html">커뮤니티</a>
+                        <a href="../../html/community_parent.html">커뮤니티</a>
                         <ul>
-                            <li><a href="sub4.html">자유게시판</a></li>
+                            <li><a href="../../html/community_parent.html">자유게시판</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub5.html">고객센터</a>
+                        <a href="../../html/notice.html">고객센터</a>
                         <ul>
-                            <li><a href="sub5.html">문의하기</a></li>
-                            <li><a href="sub5_2.html">공지사항</a></li>
+                            <li><a href="../../html/question.html">문의하기</a></li>
+                            <li><a href="../../html/notice.html">공지사항</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="side">
-                <p><button><img src="../../images/Alarm.png" alt="알림"></button></p>
-                <p><a href="#">마이페이지</a></p>
-                <p><a href="#">로그인 /</a></p>
-                <p><a href="#">회원가입</a></p>
+                <p><button onclick="window.location='../mypage/mypage_mail.html'"><img src="../../images/Alarm.png"
+                            alt="알림"></button></p>
+                <p><a href="../../html/mypage/mypage_correction.html">마이페이지</a></p>
+                <p><a href="../../html/login/loginpage.html">로그인 /</a></p>
+                <p><a href="../../html/login/registerpage.html">회원가입</a></p>
             </div>
         </div>
     </header>
@@ -109,15 +111,41 @@
                                 <button class="btn-block" type="button">로그아웃</button>
                             </a>
                         </div>
-                       
+
                     </div>
                 </div>
-                <div class="mainbox">
+                <!-- <div class="mainbox">
                     <div>
-                     <img src="../../images/logo 3.png">
-                     <p class="kidbold">등록된 아이가 없어요.</p>
-                     <p>아이정보를 추가해 주세요</p>
-                     <button class="insertKids btn-open-modal">아이정보 추가</button>
+                        <img src="../../images/logo 3.png">
+                        <p class="kidbold">등록된 아이가 없어요.</p>
+                        <p>아이정보를 추가해 주세요</p>
+                        <button class="insertKids btn-open-modal">아이정보 추가</button>
+                    </div>
+                </div> -->
+                <!-- 아이 등록 후에 페이지 -->
+                <div class="mykids">
+                    <div class="mykids-all">
+                        <div class="info-box">
+                            <div>
+                                <div class="action-form">
+                                    <div class="actions">
+                                        <button onclick="editInfo()">수정</button>
+                                        <button onclick="deleteInfo()">삭제</button>
+                                    </div>
+                                </div>
+                                <div class="kids">
+                                    <div>
+                                        <h2>강민정</h2>
+                                        <p><strong>나이:</strong> 4세</p>
+                                        <p>아이가 좀 산만한 편입니다.</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="insertKid">
+                            <button class="insertKids2 btn-open-modal">아이정보 추가</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,16 +156,17 @@
                         <div class="header">
                             <img class="img" src="../../images/logo.png" alt="로고">
                             <h3 id="title">아이 정보 추가</h3>
-                            <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                            <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png"
+                                    alt="닫기버튼"></button>
                         </div>
                         <div class="input-wrap">
                             <label for="name" class="form">이름</label>
                             <input id="name" type="text" class="form-control" placeholder="김돌봄">
-                        </div>            
+                        </div>
                         <!-- 오늘 날짜 이후에 대한 거 막아줘도 좋을듯 -->
                         <div class="input-wrap">
                             <label for="birthday" class="form">생년월일</label>
-                            <input type="date" class="form-control"> 
+                            <input type="date" class="form-control">
                         </div>
                         <div class="input-wrap">
                             <label for="gender" class="form">성별</label>
@@ -149,7 +178,8 @@
                         <!-- 글자 수 제한 하는 거 보여줘도 좋을듯 -->
                         <div class="input-wrap introduce">
                             <label for="intro" class="form">아이 소개</label>
-                            <textarea id="textarea" class="form-control" placeholder="아이에 대해 소개해주세요." rows="6" maxlength="500"></textarea>
+                            <textarea id="textarea" class="form-control" placeholder="아이에 대해 소개해주세요." rows="6"
+                                maxlength="500"></textarea>
                         </div>
                         <div class="modal-btn">
                             <button class="close-btn btn">취소하기</button>
@@ -185,26 +215,30 @@
                     <li><a href="#">이메일주소</a></li>
                 </ul>
                 <ul>
-                    <li><a href="https://blog.naver.com/jaranblog" target="_blank"><img src="../../images/footer_social_blog.png" alt="블로그 바로가기"></a></li>
-                    <li><a href="https://www.instagram.com/jaranda__official" target="_blank"><img src="../../images/footer_social_insta.png" alt="인스타그램 바로가기"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCTXkxn1OlVvljxEe-hbd3Vg" target="_blank"><img src="../../images/footer_social_youtube.png" alt="유튜브 바로가기"></a></li>
+                    <li><a href="https://blog.naver.com/jaranblog" target="_blank"><img
+                                src="../../images/footer_social_blog.png" alt="블로그 바로가기"></a></li>
+                    <li><a href="https://www.instagram.com/jaranda__official" target="_blank"><img
+                                src="../../images/footer_social_insta.png" alt="인스타그램 바로가기"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTXkxn1OlVvljxEe-hbd3Vg" target="_blank"><img
+                                src="../../images/footer_social_youtube.png" alt="유튜브 바로가기"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
-        <script>
-            function showPopup() {
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('popup-bg').style.display = 'block';
-            }
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popup-bg').style.display = 'block';
+        }
 
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none';
-                document.getElementById('popup-bg').style.display = 'none';
-            }
-        </script>
-        <!-- js도 하나에 묶어서 사용 -->
-        <script src="../../js/modal.js"></script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popup-bg').style.display = 'none';
+        }
+    </script>
+    <!-- js도 하나에 묶어서 사용 -->
+    <script src="../../js/modal.js"></script>
 </body>
 
 </html>
+마이페이지 아이등록 html
