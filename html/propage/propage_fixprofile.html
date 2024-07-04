@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="../../css/propage/propage_fixprofile.css">
     <link rel="stylesheet" href="../../css/footer.css">
 
+    <!-- 공통모달 css -->
+    <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
+    <!-- 비밀번호 변경 css -->
     <link rel="stylesheet" href="../../css/modal/password-modify.css" />
-    <!-- <link rel="stylesheet" href="../../css/modal/profile-modify.css" /> -->
-    <!-- <link rel="stylesheet" href="../../css/modal/modalstyle.css" /> -->
-
-    <!-- <script src="../../js/modal.js"></script> -->
-    <!-- <script src="../../js/profile.js"></script> -->
+    <!-- 프로필 변경 css -->
+    <link rel="stylesheet" href="../../css/modal/profile-modify.css" />
 </head>
 
 <body>
@@ -89,9 +89,6 @@
 
                 <!-- 정보 수정을 누르면 나오는 페이지 -->
                 <div class="mainbox">
-                    <div class="main">
-                        <p>회원 정보 수정</p>
-                    </div>
                     <form class="reset-form">
                         <div class="reset">
                             <div> 이름</div>
@@ -110,17 +107,17 @@
 
                         <div class="reset">
                             <div>비밀번호 변경</div>
-                            <button class="profile btn-open-modal">비밀번호 변경</button>
+                            <button type="button" class="profile btn-open-modal">비밀번호 변경</button>
                         </div>
 
                         <div class="reset" id="pro-add">
                             <div>프로필</div>
-                            <button class="profile btn-profile-modal">프로필 변경</button>
+                            <button type="button" class="profile btn-profile-modal">프로필 변경</button>
                         </div>
 
                         <div class="reset" id="pro-add">
                             <div>주소지</div>
-                            <button class="address">주소지 변경</button>
+                            <button type="button" class="address">주소지 변경</button>
                         </div>
 
                         <div class="reset-wrap">
@@ -146,58 +143,65 @@
                     </form>
                 </div>
             </div>
+              <!-- 비밀번호 변경 모달창 -->
+              <form action="#" method="get">
+                <div class="modal-pwd">
+                    <div class="pwd-body">
+                        <div class="header">
+                            <img class="img" src="../../images/logo.png" alt="로고">
+                            <h3 id="title">비밀번호 변경</h3>
+                            <button type="button" id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="childName" class="form-label">현재 비밀번호</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="childName" class="form-label">비밀번호</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="childInstruct" class="form-label">비밀번호 확인</label>
+                            <input type="text" class="form-control" >
+                        </div>
+        
+                        <div class="modal-btn">
+                            <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                            <button type="button" class="close-btn btn">취소하기</button>
+                            <button class="regist-btn btn" type="submit">수정하기</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- 프로필 변경 모달창 -->
+            <form action="#" method="get">
+                <div class="modal-profile">
+                    <div class="profile-center-body profile-modify-body">
+                        <div class="header">
+                            <a href="#"><img class="img" src="../../images/logo.png" alt="로고"></a>
+                            <h3 id="title">프로필 등록</h3>
+                            <button id="close-profile-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                        </div>
+                        <!-- 이미지 미리보기 -->
+                        <div class="profile-img-wrap">
+                            <img id="preview" alt="미리보기" class="img-profile">
+                            <label class="input-file-button" for="input-file">upload</label>
+                            <input type="file" id="input-file" onchange="prevImage(this)" style="display: none;"/>
+                        </div>
+        
+                        <div class="modal-btn">
+                            <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
+                            <button class="close-profile-btn btn">취소하기</button>
+                            <button class="add-btn btn" type="submit">등록하기</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-
-
-
-    <!-- 팝업 배경 -->
-    <div class="popup-bg" id="popup-bg" onclick="closePopup()"></div>
-
-    <!-- 팝업 내용 -->
-    <div class="popup" id="popup">
-        <h2>프로필 편집</h2>
-        <form class="form-signin" action="/auth/<%= userId %>/update" method="POST" enctype="multipart/form-data">
-            <div class="profileimage2">
-                <img src="<%= result.imageUrl %>" alt="profileImage" class="img">
-            </div>
-            <div class="input-container">
-                <label for="inputChangeNickName" class="sr-only">닉네임 변경</label>
-                <input type="text" name="nickname" id="inputChangeNickName" class="form-control" placeholder="변경할 닉네임"
-                    autofocus required>
-            </div>
-            <div class="input-container-three">
-                <label for="inputDetailAddress" class="sr-only">주소 변경</label>
-                <input type="text" name="city" id="inputAddress1" class="form-control2" placeholder="시도" autofocus>
-                <input type="text" name="district" id="inputAddress2" class="form-control2" placeholder="시군구" autofocus>
-                <input type="text" name="town" id="inputAddress3" class="form-control2" placeholder="읍면동" autofocus>
-            </div>
-            <div class="input-container">
-                <input type="text" name="detail" id="inputDetailAddress" class="form-control" placeholder="상세주소"
-                    autofocus required>
-            </div>
-            <div class="input-container">
-                <label for="profileImage" class="sr-only">프로필 이미지 변경</label>
-                <input type="file" name="profileImage" id="profileImage" class="form-control">
-            </div>
-            <button type="button" onclick="closePopup()" id="popupButton">취소</button>
-            <button type="submit" id="popupButton">저장</button>
-        </form>
+        </div>
     </div>
-    </div>
-
-    <script>
-        function showPopup() {
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('popup-bg').style.display = 'block';
-        }
-
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('popup-bg').style.display = 'none';
-        }
-    </script>
-
     <!-- footer -->
     <footer id="footer">
         <div class="footer_wrap">
@@ -234,6 +238,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        // 이미지를 미리 불러오는 js
+        function prevImage(input) {
+              if (input.files && input.files[0]) {
+                      var reader = new FileReader();
+                      reader.onload = function(e) {
+                          document.getElementById('preview').src = e.target.result;
+                      };
+                  reader.readAsDataURL(input.files[0]);
+              } else {
+                  document.getElementById('preview').src = "";
+              }
+          }
+    </script>
+    <script src="../../js/password-modal.js"></script>
+    <script src="../../js/profile-modal.js"></script>
 </body>
-
 </html>
