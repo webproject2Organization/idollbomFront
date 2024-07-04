@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="../../css/mypage/mypage_myKids.css">
-    <link rel="stylesheet"  href="../../css/header_parents.css">
+    <link rel="stylesheet"  href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <!-- 공통으로 들어가는 css는 한번에 묶어둠 -->
     <link rel="stylesheet" href="../../css/modal/modalstyle.css" />
@@ -16,50 +16,50 @@
     <header id="header">
         <div class="header_wrap">
             <h1><a href="../html/main/index_parents.html"><img src="../../images/logo.png" alt="IDOLL봄"></a></h1>
-
+    
             <nav>
                 <ul class="gnb">
                     <li>
-                        <a href="sub1.html">부모님</a>
+                        <a href="../../html/main/index_parents.html">부모님</a>
                         <ul>
-                            <li><a href="sub1.html">매칭</a></li>
+                            <li><a href="../../html/matching.html">매칭</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub2.html">전문가</a>
+                        <a href="../../html/main/index_pro.html">전문가</a>
                     </li>
                     <li>
-                        <a href="sub3.html">신청하기</a>
+                        <a href="../../html/class_list.html">신청하기</a>
                         <ul>
-                            <li><a href="sub3.html">돌봄</a></li>
-                            <li><a href="sub3_2.html">교육</a></li>
-                            <li><a href="sub3.html">운동</a></li>
-                            <li><a href="sub3_2.html">예능</a></li>
+                            <li><a href="#">돌봄</a></li>
+                            <li><a href="#">교육</a></li>
+                            <li><a href="#">운동</a></li>
+                            <li><a href="#">예능</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub4.html">커뮤니티</a>
+                        <a href="../../html/community_parent.html">커뮤니티</a>
                         <ul>
-                            <li><a href="sub4.html">자유게시판</a></li>
+                            <li><a href="../../html/community_parent.html">자유게시판</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="sub5.html">고객센터</a>
+                        <a href="../../html/notice.html">고객센터</a>
                         <ul>
-                            <li><a href="sub5.html">문의하기</a></li>
-                            <li><a href="sub5_2.html">공지사항</a></li>
+                            <li><a href="../../html/question.html">문의하기</a></li>
+                            <li><a href="../../html/notice.html">공지사항</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="side">
-                <p><button><img src="../../images/Alarm.png" alt="알림"></button></p>
-                <p><a href="#">마이페이지</a></p>
-                <p><a href="#">로그인 /</a></p>
-                <p><a href="#">회원가입</a></p>
+                <p><button onclick="window.location='../mypage/mypage_mail.html'"><img src="../../images/Alarm.png" alt="알림"></button></p>
+                <p><a href="../../html/mypage/mypage_correction.html">마이페이지</a></p>
+                <p><a href="../../html/login/loginpage.html">로그인 /</a></p>
+                <p><a href="../../html/login/registerpage.html">회원가입</a></p>
             </div>
         </div>
-    </header>
+      </header>
     <div class="container">
         <div class="inincontainer">
             <div class="mypage-main">마이페이지 > 아이정보 추가</div>
@@ -112,14 +112,42 @@
                        
                     </div>
                 </div>
-                <div class="mainbox">
-                    <div>
-                     <img src="../../images/logo 3.png">
-                     <p class="kidbold">등록된 아이가 없어요.</p>
-                     <p>아이정보를 추가해 주세요</p>
-                     <button class="insertKids btn-open-modal">아이정보 추가</button>
+                
+                    <div class="mainbox">
+                        <div>
+                        <img src="../../images/logo 3.png">
+                        <p class="kidbold">등록된 아이가 없어요.</p>
+                        <p>아이정보를 추가해 주세요</p>
+                        <button class="insertKids btn-open-modal">아이정보 추가</button>
+                        </div>
                     </div>
-                </div>
+                    <div class="mykids">
+                        <div class="mykids-all">
+                            <div class="info-box">
+                                <div>
+                                    <div class="action-form">
+                                        <div class="actions">
+                                            <button onclick="editInfo()">수정</button>
+                                            <button onclick="deleteInfo()">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div class="kids">
+                                        <div>
+                                            <h2>강민정</h2>
+                                            <p><strong>나이:</strong> 4세</p>
+                                            <p>아이가 좀 산만한 편입니다.</p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="insertKid">
+                                <!-- 클릭 시, 아이 추가 모달창이 뜨도록 한다. -->
+                                <button class="insertKids2">아이정보 추가</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
             </div>
             <!-- 아이 정보 추가 모달창 -->
             <form action="#" method="get">
@@ -208,3 +236,4 @@
 </body>
 
 </html>
+마이페이지 아이등록 html
