@@ -135,16 +135,16 @@
                         </div>
                         <div class="reset">
                             <div>비밀번호 변경</div>
-                            <button class="profile btn-open-modal">비밀번호 변경</button>
+                            <button type="button" class="profile btn-open-modal">비밀번호 변경</button>
                         </div>
                         <div class="reset" id="pro-add">
                             <div>프로필</div>
-                            <button class="profile btn-profile-modal">프로필 변경</button>
+                            <button type="button" class="profile btn-profile-modal">프로필 변경</button>
                         </div>
 
                         <div class="reset" id="pro-add">
                             <div>주소지</div>
-                            <button class="address">주소지 변경</button>
+                            <button type="button" class="address">주소지 변경</button>
                         </div>
                         <div class="submit">
                             <!-- 내 정보를 수정하면 어느 페이지로 이동해야 되나?? -->
@@ -158,15 +158,15 @@
             <!-- 비밀번호 변경 모달창 -->
             <form action="#" method="get">
                 <div class="modal-pwd">
-                    <div class="pwd-body pwd-center-body">
+                    <div class="pwd-body">
                         <div class="header">
                             <img class="img" src="../../images/logo.png" alt="로고">
                             <h3 id="title">비밀번호 변경</h3>
-                            <button id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
+                            <button type="button" id="close-btn"><img class="x-btn" src="../../images/closebtn.png" alt="닫기버튼"></button>
                         </div>
                         <div class="mb-3">
                             <label for="childName" class="form-label">현재 비밀번호</label>
-                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="childName" class="form-label">비밀번호</label>
@@ -179,7 +179,7 @@
         
                         <div class="modal-btn">
                             <!-- 추가하기를 누르면 새로운 페이지로 이동 -->
-                            <button class="close-btn btn">취소하기</button>
+                            <button type="button" class="close-btn btn">취소하기</button>
                             <button class="regist-btn btn" type="submit">수정하기</button>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
             <!-- 프로필 변경 모달창 -->
             <form action="#" method="get">
                 <div class="modal-profile">
-                    <div class="modal-body profile-body">
+                    <div class="profile-center-body profile-modify-body">
                         <div class="header">
                             <a href="#"><img class="img" src="../../images/logo.png" alt="로고"></a>
                             <h3 id="title">프로필 등록</h3>
@@ -249,18 +249,20 @@
 
     </footer>
     <script>
-        function showPopup() {
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('popup-bg').style.display = 'block';
-        }
-
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('popup-bg').style.display = 'none';
-        }
+          // 이미지를 미리 불러오는 js
+          function prevImage(input) {
+                if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function(e) {
+                            document.getElementById('preview').src = e.target.result;
+                        };
+                    reader.readAsDataURL(input.files[0]);
+                } else {
+                    document.getElementById('preview').src = "";
+                }
+            }
     </script>
     <script src="../../js/password-modal.js"></script>
     <script src="../../js/profile-modal.js"></script>
 </body>
-
 </html>
