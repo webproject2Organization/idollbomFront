@@ -64,6 +64,7 @@ button {
   width: 90%;
   text-align: right;
   margin-bottom: 50px;
+  padding-top: 80px;
 }
 
 .list-btn-wrap > a{
@@ -92,7 +93,7 @@ button {
 }
 
 .board-form > div > h1{
-  width:  100px;
+  width: 100px;
   vertical-align: middle;
 }
 
@@ -131,6 +132,24 @@ button {
 .post-content-wrap > textarea::-webkit-scrollbar{
   display: none;
 }
+
+/* 전문가의 정보 css */
+.pro-detaillist{
+  margin-left: 5%; 
+}
+
+.pro-detaillist table tr td{
+  font-size: 30px;
+}
+.pro-detaillist table tr td img {
+  width: 100px;
+  height: 100px;
+  padding-left: 50%;
+}
+
+
+
+
 
 
 
