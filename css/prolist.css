@@ -24,7 +24,7 @@ button{cursor: pointer; background: none; border: 0;}
 h2{font-size: 35px; text-align: center; margin: 100px 0 50px 0;}
 .notice>p{font-size: 20px; text-align: center; line-height: 150%; color: rgba(0, 0, 0, 0.7); margin-bottom: 100px;}
 
-/* 게시글 리스트 */
+/* 전문가 리스트 */
 .notice table{width: 100%; margin-bottom: 100px; border-collapse: collapse;}
 .notice table tr{height: 80px; border-top: 2px solid #D6D6D6; }
 .notice table tr td:not(:nth-child(2)){text-align: center;}
